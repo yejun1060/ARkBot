@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+      function button1_click() {
+        document.body.style.background = document.getElementById("background-color").value;
+        document.getElementById("a").innerHTML = document.getElementById("background-color").value
+      }
+    </script>
+
+    <strong>심리테스트</strong> <br/> <br/>
+
+    이름: <input type="text"> <br/><br/>
+    성별: 남 <input type="radio" name="gender"> 여 <input type="radio" name="gender"> <br/><br/>
+    나이: 고1 <input type="checkbox"> 고2 <input type="checkbox"> 고3 <input type="checkbox"> <br/><br/>
+    배경색 선택: <input type="color" id="background-color"> <button style="margin-left: 10px;" onclick="javascript:button1_click();">클릭</button> <br/><br/>
+    <span> 지금 바탕색은 <span id="a">#ffffff</span> 입니다. </span> <br/><br/>
+    생년월일: <input type="date"> <br/><br/>
+    사진 업로드: <input type="file"> <br/><br/>
+    비밀번호: <input type="password"><br/><br/>
+
+    <button type="submit">정보 제출</button>
+
+  </body>
+</html>
